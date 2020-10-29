@@ -16,7 +16,7 @@ namespace IterationStatements
             //STEP 5 Increment your variable by 1 
             //STEP 6 While your variable is less than 100
             var numbers = new List<int>(); // STEP 1 DONE
-            int num = 0;   //STEP 2 DONE
+            var num = 0;   //STEP 2 DONE
             {               
             do                    // STEP 3
             {
@@ -24,24 +24,30 @@ namespace IterationStatements
             num++;               //STEP 5
             } while (num < 100); //STEP 6   
 
+              Console.WriteLine($"{num}");
+
             }
-            //TODO 2
-            //STEP 1 Create a while loop
-            //STEP 2 While your variable is less than 200
-            //STEP 3 Increment your variable by 1
-            //STEP 4 Then add your variable to "numbers"
+            //TODO 
+            //STEP 1 Create a while loop "DONE
+            //STEP 2 While your variable is less than 200 DONE
+            //STEP 3 Increment your variable by 1 DONE
+            //STEP 4 Then add your variable to "numbers" DONE
             {
                 while (num < 200) ;
-
-                numbers.Add(num);
                 num++;
-                
-            }
+                numbers.Add(num);
 
-            Console.WriteLine("Increase:");
+                Console.WriteLine("Increase:");
+
+            }
             //TODO
             // Create a foreach loop
             // Write your variable to the console
+            foreach (var items in numbers)
+            {
+                Console.WriteLine($"{items}");
+            }
+
             Console.WriteLine(num);
             Console.WriteLine("Decrease:");
             // Create a for loop
@@ -49,6 +55,11 @@ namespace IterationStatements
             // in your conditional, as long as i is less than or equal to the amount of items in "numbers" (numbers.Count)
             // and as long as i is greater than or equal to 0
             // Decrement i by 1
+
+
+            for (int i = 199; i <= numbers.Count && i>=0; i--)
+
+                Console.WriteLine($"{numbers[199]}");
             {
                 // Write to the console "numbers" at index i
             }
